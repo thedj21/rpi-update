@@ -3,10 +3,10 @@
 set -o nounset
 set -o errexit
 
-REPO_URI=${REPO_URI:-"https://github.com/Hexxeh/rpi-firmware"}
+REPO_URI=${REPO_URI:-"https://github.com/thedj21/rpi-firmware"}
 
 UPDATE_SELF=${UPDATE_SELF:-1}
-UPDATE_URI="https://github.com/Hexxeh/rpi-update/raw/master/rpi-update"
+UPDATE_URI="https://raw.github.com/thedj21/rpi-update/master/rpi-update"
 
 if [[ ${BOOT_PATH:-"unset"} == "unset" && ${ROOT_PATH:-"unset"} != "unset" ]] ||
 [[ ${BOOT_PATH:-"unset"} != "unset" && ${ROOT_PATH:-"unset"} == "unset" ]]; then
